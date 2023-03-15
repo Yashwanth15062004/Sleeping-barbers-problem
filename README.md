@@ -4,15 +4,15 @@ The Sleeping Barber problem is a classic synchronization problem that involves m
 
 The challenge in this problem is to synchronize the access to shared resources (chairs and barbers) and to prevent race conditions where two customers might try to sit in the same chair, or two barbers might try to cut the hair of the same customer. Additionally, the solution must ensure that the barbers only cut hair when there is a customer in the chair.
 
-#Solution:
+###Solution
 
 
-* Input
+*Input
 number of barbers = n_brbs
 number of customers=n_cust
 number of waiting seats=wtsts
 
-*semaphore initialisation and usage
+###semaphore initialisation and usage
 1. For mutual exclusion between waiting seats of entering customers we have used m_wtsts binary semaphore initialized to 1.
 2.For mutual exclusion between barbers we used m_brbs initialized to 1.
 3.For mutual exclusion between the un-served customers(customers who exited the shop with out the job has done) we used m_unser initialised to 1.
