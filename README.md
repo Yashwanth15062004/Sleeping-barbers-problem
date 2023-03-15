@@ -1,10 +1,10 @@
-### Sleeping-barbers-problem
-#Problem statement:
+# Sleeping-barbers-problem
+## Problem statement:
 The Sleeping Barber problem is a classic synchronization problem that involves multiple barbers and multiple customers. The problem assumes a barbershop with a certain number of chairs for customers to wait in, and a certain number of barbers who can cut hair at the same time. Customers arrive randomly and either sit in a chair if one is available or leave if all chairs are occupied. If a barber is available, they begin cutting the hair of a customer. If all barbers are busy, customers must wait in their chairs until a barber becomes available.
 
 The challenge in this problem is to synchronize the access to shared resources (chairs and barbers) and to prevent race conditions where two customers might try to sit in the same chair, or two barbers might try to cut the hair of the same customer. Additionally, the solution must ensure that the barbers only cut hair when there is a customer in the chair.
 
-###Solution
+## Solution
 
 
 *Input
